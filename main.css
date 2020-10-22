@@ -1,0 +1,346 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	background-image: url("Images/background.jpg");
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+/*This is the background image section*/
+.TV-background{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+}
+/*This designs the pictures on the wall*/
+.wall-deco{
+	width: 10%;
+	height: 200px;
+	border: 2px solid grey;
+	position: absolute;
+	border-radius: 5px;
+	top: 50px;
+	box-shadow: 2px 2px 0px 2px grey inset;
+}
+/*This is the picture in the left*/
+#picture-1{
+	float: left;
+	background-image: url("Images/mine.jpg");
+	background-size: inherit;
+	background-repeat: no-repeat;
+	background-size: cover;
+	left: 10px;
+}
+/*This is the picture in the right*/
+#picture-2{
+	float: right;
+	background-image: url("Images/boy.jpg");
+	background-size: inherit;
+	background-repeat: no-repeat;
+	background-size: cover;
+	right: 60px;
+}
+/*This is the television*/
+#tv{
+	width: 35%;
+	height: 250px;
+	border: 5px inset grey;
+	border-bottom-style: outset;
+	background-color: black;
+	margin: auto;
+	border-radius: 5px;
+	position: relative;
+	top: 85px;
+	display: flex;
+	flex-direction: column;
+}
+/*The video settings*/
+#video{
+	width: 100%;
+	height: 233px;
+}/*This the the model and indicator container div*/
+.model{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	top: 233px;
+	box-shadow: 0 2px;
+	background-color: #111211;
+}
+/*This is the div that carries the Tv model*/
+#model{
+	width: 78%;
+	height: inherit;
+	float: right;
+}
+/*This is the paragraph for the model of the tv*/
+#model p{
+	font-size: 10px;
+	font-family: monospace;
+	font-weight: bolder;
+	color: white;
+	font-style: italic;
+	text-align: center;
+	margin-right: 90px;
+}
+/*This is the indicator on the tv*/
+#on-indicator{
+	width: 20%;
+	height: inherit;
+	float: left;
+}
+/*This is the indicator*/
+#indicator{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 7px;
+	left: 5px;
+	background-color: #111211;
+	box-shadow: 5px 2px 2px #7FFF00,6px 3px 2px 1px #7FFF00;
+}
+/*This is first vertical stand of the Tv*/
+#tv-stand{
+	width: 12px;
+	height: 20px;
+	position: absolute;
+	top: 255px;
+	left: 230px;
+	z-index: 2;
+	background-color: black;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+/*This is the base of the Tv*/
+#tv-base{
+	width: 80px;
+	height:80px;
+	border-radius: 50%;
+	background-color: black;
+	border:2px inset black;
+	margin: auto;
+	position: absolute;
+	top: 240px;
+	left: 195px;
+	transform: rotateX(70deg);
+	z-index: 2;
+	box-shadow: 0 20px 3px #181c19;
+}
+/*This is the container for the cabinet*/
+#cabinet-container{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+}
+/*The top of the cabinet*/
+#cabinet{
+	width: 75%;
+	height: 180px;
+	background-color: #98a39b;
+	position: absolute;
+	top: 300px;
+	left: 12.5%;
+	transform: perspective(800px) rotateX(70deg);
+	z-index: 1;
+	border: 2px outset grey;
+	border-radius: 5px;
+}
+#keyboard{
+	width: 200px;
+	height: 80px;
+	border: 2px outset grey;
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	box-shadow: 2px 10px 5px 2px grey;
+	transform: perspective(1000px) rotateX(-15deg) rotateY(-15deg) rotateZ(5deg) skewX(15deg);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+}
+#main-keys{
+	width: 75%;
+	height: 95%;
+	border: 1px inset grey;
+	box-shadow: 0 5px 0 1px grey;
+	background-color: purple;
+}
+#num-pad{
+	width: 24%;
+	height: 95%;
+	border: 1px solid grey;
+	box-shadow: 0 5px 0 1px grey;
+	background-color: cyan;
+}
+.keys{
+	width: 1.5px;
+	height: 1.5px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+
+}
+/*This is the front of the cabinet*/
+#cabinet-front{
+	width: 1131px;
+	height: 250px;
+	border: 1px solid grey;
+	margin: auto;
+	position: relative;
+	top: -58px;
+	left: 2px;
+	display: flex;
+	flex-direction: column;
+}
+/*This is the div frame of the cabinet*/
+.cabinet-frames{
+	width: 100%;
+	height: 30px;
+	box-shadow: 0 5px 0 grey;
+	border: 2px solid grey;
+	background-color: #98a39b;
+}
+#front-frame{
+	position: absolute;
+	left: -10px;
+}
+#bottom-frame{
+	position: absolute;
+	top: 211px;
+	left: -1px;
+}
+/*This is the div for the cubes in the cabinet*/
+.cubical-container{
+	width: 100%;
+	height: 180px;
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+}
+.cubicals{
+	width: 25%;
+	height: 180px;
+}
+#cubical-1,#cubical-3{
+	border: 5px outset grey;
+	background-color:#98a39b; 
+}
+#cubical-3{
+	width: 25.5%;
+	position: relative;
+	left: 3px;
+	border-right-style: inset;
+	animation-name: slide;
+	animation-duration: 5s;
+}
+#cubical-2{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	background-color: #202421;
+}
+#partition-1{
+	width: 40%;
+	height: 90px;
+	transform: perspective(200px) rotateX(60deg);
+	margin: auto;
+	position: absolute;
+	top: 50px;
+	border-bottom: 2px solid grey;
+	left: 340px;
+	background-color: #98a39b;
+}
+/*This is the tray in the partition*/
+#tray{
+	width: 50px;
+	height: 80px;
+	background-color: green;
+	margin: auto;
+	border: 2px inset grey;
+	box-shadow: 0 20px 2px white;
+	position: relative;
+	top: -20px;
+}
+#balls{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: auto;
+	background-color: gold;
+	transform: perspective(1000px) rotateY(30deg);
+	box-shadow: 5px 20px 0 2px;
+}
+#partition-2{
+	width: 100%;
+	height: 90px;
+	border: 2px outset grey;
+	position: relative;
+	top: 90px;
+	background-color: #98a39b;
+	animation-name: drop;
+	animation-duration: 5s;
+}
+#handle-2{
+	width: 60px;
+	height: 10px;
+	margin: auto;
+	background-color: silver;
+	position: relative;
+	top: 50%;
+	border-radius: 5px;
+	box-shadow: 0px 1px 0 1px; 
+}
+#handle{
+	width: 10px;
+	height: 30px;
+	background-color: silver;
+	border-radius: 5px;
+	box-shadow: 0px 1px 0 1px;
+	margin: auto;
+	position: absolute;
+	top: 45%;
+	left: 22%;
+}
+#handle-1{
+	width: 10px;
+	height: 30px;
+	background-color: silver;
+	border-radius: 5px;
+	box-shadow: 0px 1px 0 1px;
+	margin: auto;
+	position: absolute;
+	top: 45%;
+	left: 8%;
+}
+@keyframes slide{
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(-200px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+@keyframes drop{
+	0%{
+		transform: perspective(800px) rotateX(0);
+	}
+	50%{
+		transform: perspective(800px) rotateX(0);
+	}
+	90%{
+		transform: perspective(800px) rotateX(-90deg);
+	}
+	100%{
+		transform: perspective(800px) rotateX(0);
+	}
+}
